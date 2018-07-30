@@ -1,21 +1,9 @@
-//Notes:
-//NPM Init completed 7/24
-//Installed MPM dependencies:
-//    "liri": "^1.0.1",
-//    "node-spotify-api": "^1.0.7",
-//    "request": "^2.87.0",
-//    "twitter": "^1.7.1"
-
-const fs = require('fs');
-const twitter = require('twitter');
-const spotify = require('node-spotify-api');
-const request = require('request');
-var dotenv = require('dotenv').config();
-const keys = require('./keys.js');
-
-//Step 9:
-const spotify = new Spotify(keys.spotify);
-const client = new Twitter(keys.twitter);
+var fs = require('fs'); 
+var request = require('request');
+var dotenv = require("dotenv").config();
+var keys = require("./keys.js");
+//var Twitter = require("twitter");
+//var Spotify = require('node-spotify-api');
 
 // Grabs the command from the terminal
 var command = process.argv[2];
@@ -33,7 +21,7 @@ function errorFunction(respError) {
      }
 };
 
-// For logging to log.txt
+// Add logging to log.txt
 function errorFunctionStart (respError) {
     errorFunction();
     console.log("\nxxxx Log Started xxxx");
@@ -44,103 +32,13 @@ function errorFunctionEnd (respError) {
     console.log("xxxx Log Ended xxxx");
 };
 
-// -------------------- Twitter my-tweets ----------------------------
-function getTweets() {
 
-    // Accesses Twitter Keys
-    var client = new Twitter(keys.twitter); 
-    var params = {
-        screen_name: 'EgoShane',
-        count: 20
-        };
-
-    client.get('statuses/user_timeline', params, function(respError, tweets, response) {
-
-        errorFunction();
-
-        fs.appendFile("log.txt", "-----Tweets Log Entry Start-----\n\nProcessed at: \n" + Date() + "\n\n" + "terminal commands: \n" + process.argv + "\n\n" + "Data Output: \n\n", errorFunctionStart());
-
-        console.log("\n-------------- Aidan's Latest Tweets --------------\n");
-
-        for (i = 0; i < tweets.length; i++) {
-            console.log(i + 1 + ". Tweet: ", tweets[i].text);
-
-            // For alingment once the number of the tweet is 10 or higher
-            if (i + 1 > 9) {
-                console.log("    Tweeted on: ", tweets[i].created_at + "\n");
-            } else {
-                console.log("   Tweeted on: ", tweets[i].created_at + "\n");
-            }  
-            
-            fs.appendFile("log.txt", (i + 1) + ". Tweet: " + tweets[i].text + "\nTweeted on: " + tweets[i].created_at + "\n\n", errorFunction());
-        };
-
-        console.log("--------------------------------------------------\n");
-
-        fs.appendFile("log.txt", "-----Tweets Log Entry End-----\n\n", errorFunctionEnd());
-    });
-};
-
-// ======================= Spotify spotify-this-song ============================
-function searchSong(searchValue) {
-
-    // Default search value if no song is given
-    if (searchValue == "") {
-        searchValue = "The Sign Ace of Base";
-    }
-
-    // Accesses Spotify keys  
-    var spotify = new Spotify(keys.spotify);
-
-    var searchLimit = "";
-
-    // Allows the user to input the number of returned spotify results, defaults 1 return if no input given
-    if (isNaN(parseInt(process.argv[3])) == false) {
-        searchLimit = process.argv[3];
-
-        console.log("\nYou requested to return: " + searchLimit + " songs");
-        
-        // Resets the searchValue to account for searchLimit
-        searchValue = "";
-        for (var i = 4; i < process.argv.length; i++) {        
-            searchValue += process.argv[i] + " ";
-        };
-
-    } else {
-        console.log("\nFor more than 1 result, add the number of results you would like to be returned after spotify-this-song.\n\nExample: if you would like 3 results returned enter:\n     node.js spotify-this-song 3 Kissed by a Rose")
-        searchLimit = 1;
-    }
-   
-    // Searches Spotify with given values
-    spotify.search({ type: 'track', query: searchValue, limit: searchLimit }, function(respError, response) {
-
-        fs.appendFile("log.txt", "-----Spotify Log Entry Start-----\nProcessed on:\n" + Date() + "\n\n" + "terminal commands:\n" + process.argv + "\n\n" + "Data Output: \n", errorFunctionStart());
-
-        errorFunction();
-
-        var songResp = response.tracks.items;
-
-        for (var i = 0; i < songResp.length; i++) {
-            console.log("\n=============== Spotify Search Result "+ (i+1) +" ===============\n");
-            console.log(("Artist: " + songResp[i].artists[0].name));
-            console.log(("Song title: " + songResp[i].name));
-            console.log(("Album name: " + songResp[i].album.name));
-            console.log(("URL Preview: " + songResp[i].preview_url));
-            console.log("\n=========================================================\n");
-
-            fs.appendFile("log.txt", "\n========= Result "+ (i+1) +" =========\nArtist: " + songResp[i].artists[0].name + "\nSong title: " + songResp[i].name + "\nAlbum name: " + songResp[i].album.name + "\nURL Preview: " + songResp[i].preview_url + "\n=============================\n", errorFunction());
-        }
-
-        fs.appendFile("log.txt","-----Spotify Log Entry End-----\n\n", errorFunctionEnd());
-    })
-};
-
-// ++++++++++++++++++++ OMDB movie-this +++++++++++++++++++++++++
+// OMDB movie-this search function:
 function searchMovie(searchValue) {
 
-    // Default search value if no movie is given
+    // Default value if nothing entered movie is given
     if (searchValue == "") {
-        searchValue = "Mr. Nobody";
+        searchValue = "Super Troopers";
     }
 
     var queryUrl = "http://www.omdbapi.com/?t=" + searchValue.trim() + "&y=&plot=short&apikey=trilogy";
@@ -190,27 +88,14 @@ function searchMovie(searchValue) {
     });
 };
 
-// xxxxxxxxxxxxxxxxxx Random do-what-it-says xxxxxxxxxxxxxxxxxxxxxx
-function randomSearch() {
 
-    fs.readFile("random.txt", "utf8", function(respError, data) {
+// <<<<<<<<<<<<<<<<< Main Switch Case >>>>>>>>>>>>>>>>>>>>
 
-        var randomArray = data.split(", ");
-
-        errorFunction();
-
-        if (randomArray[0] == "spotify-this-song") {
-            searchSong(randomArray[1]);
-        } else if (randomArray[0] == "movie-this") {
-            searchMovie(randomArray[1]);
-        } else {
-            getTweets();
-        }
-    });
+// Runs corresponding function based on user command
+switch (command) {
+    case "movie-this":
+        searchMovie(searchValue);
+        break;
+    default:
+        console.log("\nSorry, but " + command + " is not a command that I recognize. Try the following commands: \n\n  1. Search a movie title: node liri.js movie-this (movie title) \n\n  2. To search Spotify for a song: node liri.js spotify-this-song (number of returned results) (specify song title)\n Example: node liri.js spotify-this-song 10 We Will Rock You\n\n  3. To view last 20 of Shane's tweets on Twitter: node liri.js my-tweets \n");
 };
-
-
-
-
-
-    

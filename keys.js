@@ -1,13 +1,11 @@
-console.log('this is loaded');
-
-exports.twitter = {
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
-};
+// exports.twitter = {
+//   consumer_key: process.env.Kq7UAHuyl3Jj8dxUzfNKo5LNz,
+//   consumer_secret: process.env.XyUItHcl1Cj2Vd37GkQK8bH3XNOFM20IOUTVTs4TrF8hKtIJ2d,
+//   access_token_key: process.env.625295717-wKoe5IhLW4anlHZ4mp1S93KYpqq8at7TVVKzVsQ8,
+//   access_token_secret: process.env.aGfTQ0eAwsBMkr0vC1wxpgAoJN2FuCnbxnLdNJTfwFXHm
+// };
 
 exports.spotify = {
-  id: process.env.bb364d37f8734e26b04a3392724424ef,
-  secret: process.env.90058ab733204f6698420e999600b303,
+  id: process.env.SPOTIFY_ID,
+  secret: process.env.SPOTIFY_SECRET
 };

@@ -1,0 +1,210 @@
+-----OMDB Log Entry Start-----
+
+Processed on:
+Thu Feb 01 2018 18:26:46 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\aidan\Desktop\class\homework8\liri\liri.js,movie-this,Ghostbusters
+
+Data Output: 
+
+Movie Title: Ghostbusters
+Year: 1984
+IMDB rating: 7.8
+Rotten Tomatoes Rating: 97%
+Country: USA
+Language: English
+Plot: Three former parapsychology professors set up shop as a unique ghost removal service.
+Actors: Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Thu Feb 01 2018 18:28:35 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\aidan\Desktop\class\homework8\liri\liri.js,movie-this,Ghostbusters
+
+Data Output: 
+
+Movie Title: Ghostbusters
+Year: 1984
+IMDB rating: 7.8
+Rotten Tomatoes Rating: 97%
+Country: USA
+Language: English
+Plot: Three former parapsychology professors set up shop as a unique ghost removal service.
+Actors: Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Thu Feb 01 2018 18:28:45 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\aidan\Desktop\class\homework8\liri\liri.js,movie-this,Ghostbusters
+
+Data Output: 
+
+Movie Title: Ghostbusters
+Year: 1984
+IMDB rating: 7.8
+Rotten Tomatoes Rating: 97%
+Country: USA
+Language: English
+Plot: Three former parapsychology professors set up shop as a unique ghost removal service.
+Actors: Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:24:44 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\newLiri\liri\liri.js,movie-this,testing
+
+Data Output: 
+
+Movie Title: Testing
+Year: 2015
+IMDB rating: 9.7
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: USA
+Language: English
+Plot: A contemporary married couple fights for and against each other due to the plight of pregnancy.
+Actors: Ashley Platz, Jay Hayden
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:25:35 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\newLiri\liri\liri.js,movie-this,fast,and,furious
+
+Data Output: 
+
+Movie Title: Fast and Furious
+Year: 1939
+IMDB rating: 6.2
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: USA
+Language: English
+Plot: Rare book dealers Joel and Garda take a summertime jaunt to the seashore where he becomes involved in a beauty pageant as investor and judge much to her chagrin.
+Actors: Franchot Tone, Ann Sothern, Ruth Hussey, Lee Bowman
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:42:40 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\newLiri\liri\liri.js,movie-this,help
+
+Data Output: 
+
+Movie Title: Help
+Year: 2010
+IMDB rating: 4.3
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: India
+Language: Hindi
+Plot: An unhappily married pregnant woman suspects her vengeful deceased twin has returned from the dead.
+Actors: Bobby Deol, Mugdha Godse, Shreyas Talpade, Sophie Handa
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:43:54 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\newLiri\liri\liri.js,movie-this,help
+
+Data Output: 
+
+Movie Title: Help
+Year: 2010
+IMDB rating: 4.3
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: India
+Language: Hindi
+Plot: An unhappily married pregnant woman suspects her vengeful deceased twin has returned from the dead.
+Actors: Bobby Deol, Mugdha Godse, Shreyas Talpade, Sophie Handa
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:46:51 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\newLiri\liri\liri.js,movie-this,help
+
+Data Output: 
+
+Movie Title: Help
+Year: 2010
+IMDB rating: 4.3
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: India
+Language: Hindi
+Plot: An unhappily married pregnant woman suspects her vengeful deceased twin has returned from the dead.
+Actors: Bobby Deol, Mugdha Godse, Shreyas Talpade, Sophie Handa
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:48:59 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\liri.js,movie-this,testing
+
+Data Output: 
+
+Movie Title: Testing
+Year: 2015
+IMDB rating: 9.7
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: USA
+Language: English
+Plot: A contemporary married couple fights for and against each other due to the plight of pregnancy.
+Actors: Ashley Platz, Jay Hayden
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 18:54:20 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRISampleCode\liri\liri.js,movie-this
+
+Data Output: 
+
+Movie Title: Super Troopers
+Year: 2001
+IMDB rating: 7.1
+Rotten Tomatoes Rating: 35%
+Country: USA
+Language: English, German, French
+Plot: Five Vermont state troopers, avid pranksters with a knack for screwing up, try to save their jobs and out-do the local police department by solving a crime.
+Actors: André Vippolis, Joey Kern, Geoffrey Arend, Erik Stolhanske
+
+-----OMDB Log Entry End-----
+

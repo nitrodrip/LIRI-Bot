@@ -89,7 +89,7 @@ function searchMovie(searchValue) {
 };
 
 
-// Runs corresponding function based on user command
+// Runs function based on user command
 switch (command) {
     case "movie-this":
         searchMovie(searchValue);

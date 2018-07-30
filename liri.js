@@ -51,7 +51,7 @@ function searchMovie(searchValue) {
 
         if (JSON.parse(body).Error == 'Movie not found!' ) {
 
-            console.log("\nI'm sorry, I could not find any movies that matched the title " + searchValue + ". Please check your spelling and try again.\n")
+            console.log("\nI could not find any movies that matched the title " + searchValue + ". Please try again.\n")
 
             fs.appendFile("log.txt", "I'm sorry, I could not find any movies that matched the title " + searchValue + ". Please check your spelling and try again.\n\n-----OMDB Log Entry End-----\n\n", errorFunctionEnd());
         
@@ -89,13 +89,11 @@ function searchMovie(searchValue) {
 };
 
 
-// <<<<<<<<<<<<<<<<< Main Switch Case >>>>>>>>>>>>>>>>>>>>
-
 // Runs corresponding function based on user command
 switch (command) {
     case "movie-this":
         searchMovie(searchValue);
         break;
     default:
-        console.log("\nSorry, but " + command + " is not a command that I recognize. Try the following commands: \n\n  1. Search a movie title: node liri.js movie-this (movie title) \n\n  2. To search Spotify for a song: node liri.js spotify-this-song (number of returned results) (specify song title)\n Example: node liri.js spotify-this-song 10 We Will Rock You\n\n  3. To view last 20 of Shane's tweets on Twitter: node liri.js my-tweets \n");
+        console.log("\nSorry, but " + command + " is not a command that I recognize. Try the following commands: \n\n  1. Search a movie title: node liri.js movie-this (movie title) \n\n  2. To search Spotify for a song: node liri.js spotify-this-song (Not working!!) (number of returned results) (specify song title)\n Example: node liri.js spotify-this-song 10 We Will Rock You\n\n  3. To view last 20 of Shane's tweets on Twitter: node liri.js my-tweets (Not working!!) \n");
 };

@@ -208,3 +208,52 @@ Actors: André Vippolis, Joey Kern, Geoffrey Arend, Erik Stolhanske
 
 -----OMDB Log Entry End-----
 
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 20:28:49 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRI-Bot\newLiri\LIRI-Bot\liri.js,movie-this,Terminator
+
+Data Output: 
+
+Movie Title: Terminator
+Year: 2001
+IMDB rating: 4.7
+Rotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie 
+Country: USA
+Language: English
+Plot: N/A
+Actors: Joshua Miller
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 20:30:34 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRI-Bot\newLiri\LIRI-Bot\liri.js,movie-this,dfdfgdaf
+
+Data Output: 
+
+I'm sorry, I could not find any movies that matched the title dfdfgdaf . Please check your spelling and try again.
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Sun Jul 29 2018 20:30:50 GMT-0600 (Mountain Daylight Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\Shane\Desktop\LIRI-Bot\newLiri\LIRI-Bot\liri.js,movie-this,dfdfgdaf
+
+Data Output: 
+
+I'm sorry, I could not find any movies that matched the title dfdfgdaf . Please check your spelling and try again.
+
+-----OMDB Log Entry End-----
+

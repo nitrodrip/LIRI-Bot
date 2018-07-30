@@ -2,7 +2,7 @@
 
 LIRI Bot Homework
 
-node liri.js movie-this '<movie name here>'
+node liri.js movie-this + movie name
 
 Will output the following information to your terminal/bash window:
 
